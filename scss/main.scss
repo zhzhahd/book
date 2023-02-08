@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+$mainC: rgb(180, 101, 48);
+
+@mixin dp{display: flex; margin: 0 auto; justify-content: space-between; align-items: center; }
+@mixin dp1{display: flex; margin: 0 auto; justify-content: space-around; align-items: center; }
+@mixin wd{width: 63%; margin: 0 auto;}
+
+
+*{margin: 0; padding: 0;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none; color: black;}
+
+header{width: 100%;}
+header hr{color:#eee;}
+#top{@include dp; width:65%; height: 90px; align-items: center; }
+#top input{width: 20vw; height: 55%; padding: 1.5% 1.5% 1%; color: gray; font-size: 14px; border: 1px solid gray; border-radius: 5px;}
+
+header nav{width:100%; height: 60px; display: flex; align-items: center; }
+header nav ul{@include dp; width: 40%; }
+
+#slider{width:100%; background: rgb(246, 252, 253);}
+
+#slider1,#slider2{@include wd; height: 600px; background: antiquewhite; @include dp; }
+#slider2{display:none;}
+.maintext{width: 600px; padding: 0 15px;}
+.mainimg{width: 600px; height: 600px;}
+.mainimg img{margin:0 -90px 0 40px ;}
+
+.maintext h1{font-size: 70px;}
+.maintext p{margin: 28px 0 36px;}
+
+.maintext button{background: none; padding: 18px 30px;}
+.maintext button:hover{background: #62ab00; border:2px solid #62ab00; color: white; }
+
+#side_nav{position: absolute; top: 560px; left: 100px;}
+#side_nav div{width: 50px; height: 50px; margin: 0px 0px 13px; background: white; border-radius: 50px; border: 1px solid lightgray;}
+#side_nav div:hover{background: #62ab00; color: white;}
+#prev::before{content: "\e607";}
+#next::before{content: "\e609";}
+
+#explain{@include wd; @include dp1; height: 244px;}
+.icon{@include dp;}
+.icon div {
+    h2{font-size: 18px;}
+    p{font-size: 16px;}
+    img{width: 65%;}}
+
+#twocut{@include wd; @include dp1; padding-bottom:45px ;}
+
+#twocut1{ width:570px; height: 240px; background: yellowgreen;  }
+.twocut img:hover a{transform: scale(1);}
+.twocut_text{position: relative; left: 40px; top:30px; color: white;}
+.twocut_text p{font-size: 18px;}
+.twocut_text h3{font-size: 32px; margin: 0px 0px 8px;}
+.twocut_text a{color: white; text-decoration: underline;}
+.twocut_text a:hover{color: #62ab00;}
+.twocut_img{position: absolute;}
+
+#book1{height: 583px; @include wd; @include dp1; flex-wrap: wrap;}
+#book1 p{width: 100%;}
+.part{width:270px; height: 446px; background: sandybrown;}
+
+
+
+.footerall{width: 60%; margin:0 auto;}
+.footer3 ul li{float: left; padding-right: 2%; font-size: 11px;}
+.footer3 ul li::after{content: " >";}
+.footer3 p{font-size:10px;}
+
+

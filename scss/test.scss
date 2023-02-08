@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+$maincolor: red;
+
+h1{color:$maincolor}
+
+$mainColor: purple;
+
+h1{
+    color: #454545+#345678;
+}
+
+
+@mixin important_text{
+    color:red;
+    font: {
+        size: 25px;
+        weight: bold;
+    };
+    border: 1px solid blue;
+
+}
+
+.danger{
+    @include important_text;
+}
+
+@mixin box{
+    width: 100px;
+    height: 100px;
+    margin: {
+        top:10px;
+        left: 20px;
+    };
+    padding: 10px;
+
+}
+
+@mixin border($width:1px, $color:#333){
+    border:$width solid $color;
+}
+
+.box{
+    &1{
+        @include box;
+        @include border;
+        background: pink;
+    }
+
+    &2{
+        @include box;
+        @include border(5px,orange);
+        background: skyblue;
+    }
+
+}
