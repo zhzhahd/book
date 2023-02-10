@@ -8,6 +8,7 @@
     <title>Shirley</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
@@ -21,16 +22,15 @@
             
             <div id="search">
             <input type="search" value="Search our store">
-            <button>f</button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
             <div>
-                <img>
-                <img>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-gear"></i>
             </div>
         </div>
 
-        <hr>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -42,36 +42,41 @@
                 <li><a href="#">Pages</a></li>
             </ul>
         </nav>
-        <hr>
     </header>
 
-
-    <div id="slider">
-        <div id="slider1">
-            <div class="maintext">
-                <h1>Yoga Lesson</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et
-                    dolore magna aliqua. </p>
-                <button>SHOP NOW</button>
-            </div>
-            <div class="mainimg"><img src="img/slider1.png"></div>
-        </div>
+    <div id="slidewrap">
+        <ul class="slide">
+            <li id="slider1">
         
-        <div id="slider2">
-            <div class="maintext">
-                <h1>Child Care Book</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et
-                    dolore magna aliqua. </p>
-                <button>SHOP NOW</button>
-            </div>
-            <div class="mainimg"><img src="img/slider2.png"></div>
-        </div>
-
-        <div id="side_nav">
-            <div id="prev"></div>
-            <div id="next"></div>
-        </div>
+                <div class="maintext">
+                    <h1>Yoga Lesson</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut
+                        labore et
+                        dolore magna aliqua. </p>
+                    <button>SHOP NOW <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="mainimg"><img src="img/slider1.png"></div>
+        
+            </li>
+            <li id="slider2">
+                <div class="maintext">
+                    <h1>Child Care Book</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut
+                        labore et
+                        dolore magna aliqua. </p>
+                    <button>SHOP NOW <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="mainimg"><img src="img/slider2.png"></div>
+        
+            </li>
+        </ul>
     </div>
+     
+        
+        <div id="side_nav">
+            <div id="prev"><i class="fa-solid fa-chevron-up"></i></div>
+            <div id="next"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
     
         
    
@@ -97,74 +102,206 @@
   
         
     </div>
-
     <div id="twocut">
         <div id="twocut1">
             <div class="twocut_img"><a href="#"><img src="img/twocut1.jpg" alt="아이와 엄마가 책을 읽고 있는 이미지"></a></div>
-            <div class="twocut_text"><p>SPECIAL OFFER</p><h3>Buy 3. Get<br>1 Free</h3><a href="#">SHOP NOW</a></div>
+            <div class="twocut_text">
+                <p>SPECIAL OFFER</p>
+                <h3>Buy 3. Get<br>1 Free</h3><a href="#">SHOP NOW</a>
+            </div>
         </div>
-
+    
         <div id="twocut1">
             <div class="twocut_img"><a href="#"><img src="img/twocut2.jpg" alt="아이와 엄마가 책을 읽고 있는 이미지"></a></div>
-            <div class="twocut_text"><p>$50.00</p><h3>Praise for<br>The Night Child</h3><a href="#">SHOP NOW</a></div>
+            <div class="twocut_text">
+                <p>$50.00</p>
+                <h3>Praise for<br>The Night Child</h3><a href="#">SHOP NOW</a>
+            </div>
         </div>
-        
     </div>
-
+    
     <div id="book1">
+        <span><a href="#">VEIW MORE</a></span>
         <h4>Flash Sale Offer</h4>
+    
         <div id="all_part">
             <div class="part">
-                <div class="part_img"><a href="#"><img src="img/part1.webp"></a></div>
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+                <!-- <p><i class="fa-solid fa-star"></i></p> -->
+            </div>
+            <div class="part">
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+            </div>
+            <div class="part">
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+            </div>
+            <div class="part">
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="body">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide_in">
+                        <div class="slide_book"><img src="img/swiper1.png" alt="book1"></div>
+                        <div class="slide_text">
+                            <h6>A New World</h6>
+                            <p>AUthor: Julojulo Vondos</p>
+                            <p>$75.00 &nbsp; <span>$100.00</span></p>
+                            <button>SHOP NOW<i class="fa-thin fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_in">
+                        <div class="slide_book"><img src="img/swiper2.png" alt="book2"></div>
+                        <div class="slide_text">
+                            <h6>Jungle Life</h6>
+                            <p>AUthor: Johurul miya</p>
+                            <p>$160.00 &nbsp; <span>$190.00</span></p>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_in">
+                        <div class="slide_book"><img src="img/swiper3.png" alt="book3"></div>
+                        <div class="slide_text">
+                            <h6>Yoga Lession</h6>
+                            <p>AUthor: Marcel Brown</p>
+                            <P>$170.00 &nbsp; <span>$180.00</span> </P>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_in">
+                        <div class="slide_book"><img src="img/swiper4.png" alt="book4"></div>
+                        <div class="slide_text">
+                            <h6>Heaven of life</h6>
+                            <p>AUthor: momenz vong</p>
+                            <p>$120.00 &nbsp; <span>$150.00</span></p>
+                            <button>SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    
+        </div>
+    </div>
+    
+    <div id="book1">
+        <span><button id="book1_btn1">TOP RATED BOOKS</button><button id="book1_btn2">BEST SELLING BOOK</button></span>
+        <h4>Flash Sale Offer</h4>
+    
+        <div id="all_part">
+            <div class="part">
+                <div class="part_img"></div>
                 <div class="action"></div>
                 <div class="part-1">
+                    <h3></h3>
                     <p></p>
-                    <p></p>
-                    
+    
                 </div>
             </div>
             <div class="part">
-                <div class="part_img"><a href="#"><img src="img/part2.webp"></a></div>
+                <div class="part_img"></div>
                 <div class="action"></div>
                 <div class="part-1"></div>
             </div>
             <div class="part">
-                <div class="part_img"><a href="#"><img src="img/part3.webp"></a></div>
+                <div class="part_img"></div>
                 <div class="action"></div>
                 <div class="part-1"></div>
             </div>
             <div class="part">
-                <div class="part_img"><a href="#"><img src="img/part4.webp"></a></div>
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="time">
+        <div id="timesale">
+            <div id="count">
+                <h2>Start a new series - Up to 50% off</h2>
+                <p>we has the weekly promotion, keep up with us and you’ll get the best deal to get your loved stuff. Our
+                    design reflects the purity of contemporary forms for enduring appeal.</p>
+            </div>
+            <div id="book_slide"></div>
+        </div>
+    </div>
+    
+    <div id="book1">
+        <span><a href="#">VEIW MORE</a></span>
+        <h4>Most Popular Book</h4>
+    
+        <div id="all_part">
+            <div class="part">
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1">
+                    <h3></h3>
+                    <p></p>
+    
+                </div>
+            </div>
+            <div class="part">
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+            </div>
+            <div class="part">
+                <div class="part_img"></div>
+                <div class="action"></div>
+                <div class="part-1"></div>
+            </div>
+            <div class="part">
+                <div class="part_img"></div>
                 <div class="action"></div>
                 <div class="part-1"></div>
             </div>
         </div>
     </div>
 
-
-        <div id="body">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1
-
-                </div>
-                <div class="swiper-slide">Slide 2
-
-                </div>
-                <div class="swiper-slide">Slide 3
-
-                </div>
-                <div class="swiper-slide">Slide 4
-
-                </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+    <div id="person">
+        <div id="person_slide">
+            <div class="person_slide">
+                <img src="img/person1.jpg" alt="person">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</p>
+                <span>HESTER PERKINS</span>
             </div>
+            <div class="person_slide">
+                <img src="img/person2.jpg" alt="person">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</p>
+                <span>HESTER PERKINS</span>
             </div>
-            
-        
+            <div class="person_slide">
+                <img src="img/person3.jpg" alt="person">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</p>
+                <span>NICOLE VALDEZ</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
     <footer>
