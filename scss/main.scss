@@ -5,26 +5,35 @@ $mainC: rgb(180, 101, 48);
 @mixin dp{display: flex; margin: 0 auto; justify-content: space-between; align-items: center; }
 @mixin dp1{display: flex; margin: 0 auto; justify-content: space-around; align-items: center; }
 @mixin wd{width: 63%; margin: 0 auto;}
-@mixin hover{background: #62ab00; color: #fff;}
+@mixin hover{background: #62ab00; color: #fff; border: 2px solid #62ab00; transition: all 0.5s ease 0s;}
+@mixin bd{border: 2px solid #fff;}
+@mixin bd1{border: 2px solid #eee;}
+@mixin back{background-position: center; background-size: cover;}
+@mixin bf{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0.9;}
 
 
-*{margin: 0; padding: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;}
+
+
+*{margin: 0; padding: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: lighter;}
 ol,ul,li{list-style: none;}
 a{text-decoration: none; color: black;}
-button:hover{cursor: pointer;}
+button:hover,i:hover{cursor: pointer;}
+
 
 header{width: 100%;}
 header hr{color:#eee;}
 #top{@include dp; width:65%; height: 90px; align-items: center; }
 #logo{width: 270px; padding: 0 30px;}
 
-#search{padding: 0px 15px; width: 538px;}
-#search button{color: #fff; font-size: 20px; position: relative; top:2px; right: 8px; z-index: 3; width: 90px; height: 50px; background: #62ab00; border-radius: 0 5px 5px 0; border: none;}
+#search{padding: 0px 15px; width: 747px;}
+#search button{color: #fff; font-size: 20px; position: relative; top:2px; right: 93px; z-index: 3; width: 90px; height: 50px; background: #62ab00; border-radius: 0 5px 5px 0; border: none;}
 #search button:hover{background: black;}
-#search input{position:relative; width: 20vw; height: 50px; padding: 8px 10px; color: gray; font-size: 14px; border: 1px solid gray; border-radius: 5px;}
+#search input{position:relative; width: 570px; height: 50px; padding: 3px 27px; color: gray; font-size: 14px; border: 1px solid gray; border-radius: 5px;}
 
-#sidemenu{display: flex; font-size: 18px;}
-#sidemenu i:last-child{padding-left: 15px;}
+#sidemenu{display: flex; font-size: 18px; padding: 16px 26px 0;}
+#sidemenu i:first-child{color: #62ab00; font-size: 26px; line-height: 14px;}
+#sidemenu i:last-child:hover{color: #62ab00;}
+#sidemenu i:last-child{padding-left: 15px;} 
 
 header nav{width:100%; height: 60px; display: flex; align-items: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
 header nav ul{@include dp; width: 40%; }
@@ -42,11 +51,11 @@ header nav ul{@include dp; width: 40%; }
 .maintext p{margin: 28px 0 36px; transform: translateX(-400px); transition: 1s;}
 
 .maintext button{background: none; padding: 18px 30px; transform: translateX(-500px); transition: 1s;}
-.maintext button:hover{@include hover; border:2px solid #62ab00;}
+.maintext button:hover{@include hover;}
 #shoping_icon{width: 3.5%; margin-top: 2%;}
 
 #side_nav{position: absolute; top: 560px; left: 100px;}
-#side_nav div{width: 50px; height: 50px; margin: 0px 0px 13px; background: white; border-radius: 50px; border: 1px solid lightgray;}
+#side_nav div{width: 50px; height: 50px; margin: 0px 0px 13px; background: white; border-radius: 50px; @include bd1;}
 #side_nav div:hover{@include hover; cursor: pointer}
 #side_nav div i{margin: 18px 0 0 18px;}
 
@@ -58,6 +67,7 @@ header nav ul{@include dp; width: 40%; }
     h2{font-size: 18px; line-height: 36px;}
     p{font-size: 16px; line-height: 24px;}
     img{width: 65%;}}
+.icon div:hover{animation: .5s ease-in-out 0s normal none 1 running tada;}
 
 #twocut{@include wd; @include dp1; padding-bottom:45px ;}
 
@@ -68,19 +78,20 @@ header nav ul{@include dp; width: 40%; }
 .twocut_text h3{font-size: 32px; margin: 0px 0px 8px;}
 .twocut_text a{color: white; text-decoration: underline;}
 .twocut_text a:hover{color: #62ab00;}
-.twocut_img{position: absolute;}
+.twocut_img{position: absolute; overflow: hidden;}
+.twocut_img img:hover{transform: scale(1.05); transition: all .5s ease 0s;}
 
-#book1{height: 583px; @include wd;  flex-wrap: wrap;}
-#book1 h4{font-size: 25px; margin: 0 0 5px; padding: 0 0 15px;}
-#book1 span{float: right;} #book1 span:hover a{color: #62ab00;}
-#book1 button{border: none; padding: 14px 20px; margin-right: 15px;}
+.book1{height: 583px; @include wd;  flex-wrap: wrap;}
+.book1 h4{font-size: 25px; margin: 0 0 20px; padding: 0 15px 15px;}
+.book1 span{float: right;} .book1 span a:hover {color: #62ab00;}
+.book1 button{border: none; padding: 14px 20px; margin-right: 15px;}
 #book1_btn{
   &1{@include hover; border: none;}
   &2{background: #eee; border: none;}
 }
-#all_part{@include dp1;}
-.part{width:270px; height: 446px; border: 1px solid #eee;}
-.part:hover{box-shadow: 4px 4px 10px ;}
+.all_part{@include dp1;}
+.part{width:270px; height: 446px; @include bd1;}
+.part:hover{box-shadow: 4px 4px 10px #eee;}
 .part_img{width: 268px; height: 268px; display: flex; justify-content: center; align-items: center;}
 .part_img img{width: 160px; border-radius: 5px; box-shadow: 2px 1px 10px gray;}
 .part-1{padding: 27px 24px 30px; width: 220px; height: 118px; flex-direction: column; justify-content: space-between; display: flex;}
@@ -88,44 +99,90 @@ header nav ul{@include dp; width: 40%; }
 
 #body {position: relative; height: 100%; background: #eee; margin: 20px 0 75px;}
 
-.swiper {width: 100%; height: 100%;}
+.swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto;}
 
-.swiper-slide {width: 950px; height: 510px; text-align: center; font-size: 18px; background: #eee; display: flex; justify-content: center; align-items: center;}
-.swiper-slide:nth-of-type(1){background-image: url(img/swiper_back1.jpg);}
-
+.swiper-slide {width: 950px; height: 510px; text-align: center; font-size: 18px; background: #eee; display: flex; justify-content: center; align-items: center; @include back;}
+.swiper-slide::before{@include bf;}
+.swiper-slide:nth-of-type(1){background-image: url(../img/swiper_back1.jpg);} .swiper-slide:nth-of-type(1)::before{background: #6183a1;}
+.swiper-slide:nth-of-type(2){background-image: url(../img/swiper_back2.jpg);} .swiper-slide:nth-of-type(2)::before{background: #78797d;}
+.swiper-slide:nth-of-type(3){background-image: url(../img/swiper_back3.jpg);} .swiper-slide:nth-of-type(3)::before{background: #56838b;}
+.swiper-slide:nth-of-type(4){background-image: url(../img/swiper_back4.jpg);} .swiper-slide:nth-of-type(4)::before{background: #aaa9a0;}
 .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 
-.slide_in{width: 850px; height:370px;}
-.swiper { margin-left: auto; margin-right: auto;}
+.slide_in{width: 850px; height:370px; z-index: 5;}
 
 .slide_book{width: 253px; height:370px; background: wheat; float: left;}
 .slide_text{display: flex; flex-direction: column; align-items: baseline; color: #fff; padding: 80px 0 80px 20px;}
 .slide_text h6{width: 100%; text-align: left; font-size: 40px; padding-bottom: 13px;}
 .slide_text p{font-size: 22px; padding-bottom: 10px;}
 .slide_text span{ text-decoration: line-through; font-size: 22px}
-.slide_text button{padding: 15px 30px; margin-top: 10px; background: none; border: 1px solid #fff; color: #fff;}
-.slide_text button:hover{@include hover; background: none;}
+.slide_text button{padding: 15px 30px; margin-top: 10px; background: none; @include bd; color: #fff;}
+.slide_text button:hover{@include hover;}
 
-#time{width: 100%; height: 790px;}
-#timesale{width:1200px; height:545px; margin: 0 auto;}
-#count{width: 670px; height:464px;}
+#time{width: 100%; height: 790px; background: url(../img/time_back.jpg); position: relative; color: #fff; display: flex; align-items: center; @include back; margin-bottom: 80px;}
+#time::before{background: #19222d; @include bf;}
+#timesale{width:1200px; height:545px; margin: 0 auto; display: flex; z-index: 5;}
+#count{width: 670px; height:464px; padding: 65px 15px;}
+#count h2{font-size: 36px; margin: -5px 0 25px;}
+#count p{margin:0 0 35px; line-height: 24px;}
+#count button{padding: 15px 30px; font-size: 16px; background: none; color: #fff; @include bd;}
+#count button:hover{@include hover;}
+
+#days{display: flex; text-align: center;  width: 670px; height: 125px; margin: 0 0 40px;}
+#days div{width: 113px; padding: 10px 25px; margin:0 0 40px; border-right: 2px solid #fff; }
+#days div:first-child{border-left: 2px solid #fff;}
+#days h3{font-size: 36px; margin:0 0 10px;}
+
+.book_slide{width: 500px; height: 574px; padding: 0 20px; overflow: hidden; position: relative;}
+.book_slide button{width: 55px; height: 55px;}
+#prev1{position: absolute; top: 50%;} 
+// #next1{position: absolute; top: 50%;}
+#book_slide{width: 940px;}
+#book_slide img{width: 470px;}
+#book_slide ul li img{float: left;}
+
+.part-1 #text{font-size: 14px;}
+.part-1 a{font-size: 18px; line-height: 50px;}
+.part-1 p{font-size: 20px; color: #62ab00;}
+
+#person{width: 100%; height: 350px; padding: 80px 0 35px; position: relative; background-image: url(../img/person.png); @include back;}
+#person::before{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: #19222d; opacity: 0.9;  }
+.person_slide{width: 1000px; margin: 0 auto; overflow: hidden; z-index: 5; position: relative;}
+#person_slide{width: 3000px; margin: 0 auto; }
+#person_slide li{float: left; width: 970px; height: 275px; color: #fff; padding: 0 15px; display: flex; justify-content: center; flex-wrap: wrap;}
+#person_slide li p{margin: 30px 97px 32px; width: 100; line-height: 32px; margin: 30px auto 32px; font-size: 16px;}
+#person_slide li h5{margin: 22px 0 0 ; text-align: center; width: 100%; font-size: 14px;}
+#person_slide img{border-radius: 50px;}
 
 
-#person{width: 100%; height: 465px;}
-#person_slide{width: 970px; height: 275px; margin: 0 auto; @include dp;}
-.person_slide img{border-radius: 50px;}
+#blogs{width: 1170px; height: 632px; padding: 80px 0 30px; margin: 0 auto; flex-wrap: wrap; @include dp1;}
+
+#blogs h2{text-align: center; font-size: 30px; line-height: 24px; padding: 0 0 60px; width: 100%;}
+.blogs{width: 370px; margin-bottom: 40px; }
+.blogs_img{width: 370px; overflow: hidden;}
+.blogs_img img{width: 100%; margin-bottom: 25px;}  .blogs_img img:hover{transform: scale(1.05); transition: all 0.5s; cursor: pointer;}
+.blogs_text{height: 197px;}
+.blogs_text a:hover{color: #62ab00;cursor: pointer;}
+.blogs_text a{font-size: 18px; margin-bottom: 20px;}
+.blogs_text hr{border: 0.1px solid #eee;}
+.blogs_text p{font-size: 14px; line-height: 25px; color: #333;}
+.blogs_text ul{display: flex; font-size: 14px; color: gray; padding: 22px 0 25px 0;}
+.blogs_text ul li:first-child::before{content: ""; position: absolute; right: -22px; top: 12px; width: 15px; height: 1px; background: #999898; transform: rotate(70deg);}
 
 
 
+.footerall{@include wd; height: 253px; padding: 20px; @include dp; }
+.footer-400{width: 400px; padding: 0 15px; }
+.footer-400:first-child p{margin-top: 45px;}
+.footer-400 div{margin-top: 20px;  width: 300px; height: 50px;}
+.footer-400 p{font-size: 14px;}
+.footer-400 div input{height: 50px; padding: 2px 60px 2px 30px; font-size: 14px; border: 1px solid; box-sizing: border-box;}
+.footer-400 div button{position: absolute; background: black; color: #fff; width: 50px; height: 50px;}
 
 
-
-
-
-
-.footerall{width: 60%; margin:0 auto;}
-.footer3 ul li{float: left; padding-right: 2%; font-size: 11px;}
-.footer3 ul li::after{content: " >";}
-.footer3 p{font-size:10px;}
+.footer-200{width: 200px; padding: 0 15px;}
+.footer-200 p:first-child, .footer-400 p:first-child{font-size: 18px; font-weight: bold; margin-bottom: 33px;}
+.footer-200 p{margin-bottom: 25px; font-size: 16px;}
+.footer-400 p{margin-bottom: 25px; font-size: 14px;}
 
 
