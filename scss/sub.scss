@@ -2,7 +2,108 @@
 
 @import "common";
 
+#sub_nav{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
+#sub_nav1{width: 950px; position: absolute; left: 0; display: flex; align-items: flex-start; left: -273px; padding: 23px 30px 46px 0; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;visibility: hidden;}
+#sub_nav2{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
+
+#sub_nav li, #sub_nav1 li ul li, #sub_nav2 li{margin-bottom: 16px;} #sub_nav li a:hover,#sub_nav1 li a:hover,#sub_nav2 li a:hover{color: #62ab00;}
+#sub_nav li a{margin-left: 16px;}
+#sub_nav1 li ul{display: flex; flex-direction: column; align-items: flex-start;}
+#sub_nav1 li ul li:first-child{margin-top: 16px;}
+
+
+
+
+
 #top_menu{width: 100%; height: 95px; background: #f6f6f6;}
 #top_menu ul{height: 95px; display: flex; justify-content: center; align-items: center; font-size: 15px;}
+#top_menu ul li a:hover{color: red; transition: all 0.5s;}
 
-#book_main{width: 100%; padding: 95px 0 100px;}
+
+#book_main{margin: 100px 0 95px 0;}
+#book_details{width:1200px; margin: 0 auto; display: flex;}
+#book_pc{ padding: 0 15px;}
+#pc_show{width:568px; height: 568px; border: 1px solid #ccc;}
+#pc_show img{width: 100%;}
+
+#pc_slide{margin-top: 20px; padding: 0 50px 0 70px;position: relative;}
+#pc_slide p{ width: 30px; height: 30px; border: 1px solid #ccc; border-radius: 50px; position: absolute;}
+#pc_prev{top: 35%; left: 6.5%;}
+#pc_next{top: 35%; right: 5%;}
+#pc_slide p i{ color: #666; line-height: 30px; transform: translateX(110%);}
+#show{width: 450px; overflow: hidden;} #hide{width: 600px;}
+#hide div{width: 92px; margin-right: 21px; float: left;}
+
+
+
+#book_buy{width: 540px; padding: 0 15px 0 45px;}
+#book_title ul{display: flex;} #book_title ul li{padding-right: 10px;}
+#book_title ul li i{color: #e7a415; padding-right: 5px;}
+#book_title span{margin: 15px 0; color: #62ab00; font-size: 24px;  line-height: 54px;}
+#book_title p{font-size: 14px; margin-bottom: 20px;}
+
+#book_table{font-size: 14px;}
+#book_table li{border: 1px solid #ccc; padding: 5px; border-bottom: none; line-height: 24px;}
+#book_table li:last-child{border-bottom: 1px solid #ccc;}
+#book_table li span{padding: 5px;}
+#book_table li span:first-child{border-right: 1px solid #ccc; padding: 5px; width: 100px; display: inline-block;}
+
+#number{margin: 40px 0 34px 0; display: flex; align-items: center;}
+#up_down{ color: gray; position: relative; display: flex; border: 1px solid #ccc; width: 80px; height: 60px;}
+#up_down div{position: absolute; top: 35%; cursor: pointer;}
+#up_down input{background: none; border: none; position: relative; left: 47%; color: gray;}
+#up{right: 5%;} #down{left: 10%}
+#number button{padding: 23px 38px; margin: 0 25px 0 10px; background: #000; color: #fff; border: none; }
+#number i{font-size: 18px;} #number i:last-child{margin-left: 25px;}
+
+#Buy_it_now{background: #1990c6; padding: 23px 38px; border: none; color: #fff; width: 340px; margin-bottom: 20px; font-size: 14px;}
+#Buy_it_now:hover{background: #62ab00; transition: all 0.5s;}
+
+#Categories, #Share, #Pay{padding-top: 10px;}
+
+#Categories, #Categories ul{display: flex;} #Categories ul li{padding: 0 10px; font-size: 14px;}
+#Categories ul li:hover{color: #62ab00; transition: all 0.5s;}
+
+#Share ul li a i{font-size: 18px;}
+
+
+#Pay span{line-height: 28px;}
+#choose{display: flex;}
+#choose div{width: 5%; height: 28px; padding: 0 9px; margin-right: 5px; border: 1px solid #ccc; border-radius: 3px; display: flex; justify-content: center; align-items: center;}
+#choose div img{width: 75%;}
+#choose div:nth-child(2) img, #choose div:nth-child(4) img{width: 125%;}
+#choose div:nth-child(6) img{width: 120%;}
+
+#detail{padding-bottom: 95px;}
+#detail1{width: 1200px; margin: 0 auto; padding: 0 15px 0; display: flex;}
+#detail1_text{width: 800px;}
+#detail1_text ul{display: flex;}
+#detail1_text ul li{position: absolute;}
+#detail1_pc{width: 400px; padding: 0 15px;} #detail1_pc img{width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

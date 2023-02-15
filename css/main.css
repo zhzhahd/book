@@ -112,6 +112,10 @@ header nav ul {
   width: 40%;
 }
 
+header nav ul li {
+  position: relative;
+}
+
 footer {
   padding-top: 45px;
 }
@@ -534,7 +538,7 @@ footer {
 }
 
 .part-1 span i {
-  color: rgb(238, 201, 81);
+  color: #e7a415;
   padding: 12px 5px 0 0;
 }
 
