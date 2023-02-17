@@ -18,34 +18,6 @@ $(document).ready(function () {
 
 
 
-
-  // API
-  $.ajax({
-    method: "GET",
-    url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "lesson", size: 50 },
-    headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
-  })
-    .done(function (msg) {
-      var boxs = document.getElementsByClassName('part_img');
-
-
-      for (var i = 0; i < boxs.length; i++) {
-
-        $(".part_img").eq(i).append('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-
-        var str = msg.documents[i].title;
-        var str2 = str.substring(0, 15);
-
-        $(".part-1 h5").eq(i).append('<a href="sub.html">' + str2 + "</a>");
-        $(".part-1 p").eq(i).append("&#8361;" + msg.documents[i].price);
-      }
-
-    });
-
-
-
-
   // 메인 텍스트 이동  
   $('.maintext h1').css('transform', 'translateX(0)')
   $('.maintext p').css('transform', 'translateX(0)')
@@ -114,23 +86,6 @@ $(document).ready(function () {
   }).mouseout(function () {
     $('.book_slide>button').css('display', 'none');
   });
-
-
-  //book1의 hover 사이드 메뉴
-  $('.part_img').mouseover(function () {
-    $(this).find('.action i').css('opacity','1').css('transform', 'translateX(0)');
-  }).mouseout(function () {
-    $(this).find('.action i').css('opacity','0').css('transform', 'translateX(-40px)');
-  });
-
-
-
-
-
-
-
-
-
 
 
 

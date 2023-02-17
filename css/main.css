@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -475,7 +476,7 @@ footer {
 .part {
   width: 270px;
   height: 446px;
-  border: 2px solid #eee;
+  border: 1px solid #eee;
 }
 
 .part:hover {
@@ -535,6 +536,14 @@ footer {
 .part-1 p {
   font-size: 20px;
   color: #62ab00;
+}
+
+.part-1 span::before {
+  content: "ㅡ";
+  font-size: 20px;
+  font-weight: bold;
+  color: lightgrey;
+  margin-right: 10px;
 }
 
 .part-1 span i {

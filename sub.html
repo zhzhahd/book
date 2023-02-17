@@ -7,8 +7,10 @@
     <title>Shirley</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-    <link rel="stylesheet" href="css/sub.css"><link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="sub.js"></script>
+    <script src="api.js"></script>
 </head>
 <body>
     <header>
@@ -98,8 +100,8 @@
 
     <div id="top_menu">
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li>/ BLEW IN THE WIND</li>
+            <li><a href="index.html">HOME</a></li>/
+            <li></li>
         </ul>
     </div>
     <div id="book_main">
@@ -110,11 +112,11 @@
                     <p id="pc_prev"><i class="fa-solid fa-angle-left"></i></p>
                     <div id="show">
                         <div id="hide">
-                            <div><img src="../img/book_slide1.webp" alt="book_img"></div>
-                            <div><img src="../img/book_slide2.webp" alt="book_img"></div>
-                            <div><img src="../img/book_slide3.webp" alt="book_img"></div>
-                            <div><img src="../img/book_slide4.webp" alt="book_img"></div>
-                            <div><img src="../img/book_slide5.webp" alt="book_img"></div>
+                            <div><img src="../img/part1.webp" alt="book_img"></div>
+                            <div><img src="../img/part2.webp" alt="book_img"></div>
+                            <div><img src="../img/part3.webp" alt="book_img"></div>
+                            <div><img src="../img/part4.webp" alt="book_img"></div>
+                            <div><img src="../img/part5.webp" alt="book_img"></div>
                         </div>
                     </div>
                     <p id="pc_next"><i class="fa-solid fa-chevron-right"></i></p>
@@ -145,11 +147,11 @@
                         <span class="Author_Name"></span>
                     </li>
                     <li>
-                        <span>Product Type</span>
-                        <span></span>
+                        <span>Publisher</span>
+                        <span class="publisher"></span>
                     </li>
                     <li>
-                        <span></span>
+                        <span>Date Time</span>
                         <span class="datetime"></span>
                     </li>
                 </ul>
@@ -174,11 +176,11 @@
                 </div>
                 <div id="Share">
                     <span>Share:</span>
-                    <ul>
+
                         <li><a href="https://ko-kr.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
                         <li><a href="https://twitter.com/?lang=ko" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
                         <li><a href="https://www.pinterest.co.kr/" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a></li>
-                    </ul>
+           
                 </div>
                 <div id="Pay">
                     <span>Guaranteed safe checkout</span>
@@ -203,38 +205,220 @@
     
     <div id="detail">
         <div id="detail1">
+        
             <div id="detail1_text">
-                <ul>
-                    <li>Drescription
-                         <div id="tmpBox"></div>
+                <div class="detail">
+                    <ul>
+                        <li id="detail_Drescription">Drescription</li>
+                        <li id="detail_Comments">Comments</li>
+                        <li id="detail_Reviews">Reviews</li>
+                        <li id="detail_Size">Size Chart</li>
+                        <li id="detail_shipping">shipping Policy</li>
+                    </ul>
+                    <div id="tmpBox"></div>
                     </li>
-                    <li>Comments
-
-                    </li>
-                    <li>Reviews
-                        <div id="Reviews">
-                            <h2>Customer Reviews</h2>
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            <span>Based on 3 reviews</span>
-                            <span><a>Write a review</a></span>
+                    <div id="Reviews">
+                        <div class="Reviews">
+                            <div id="Reviews1">
+                                <h2>Customer Reviews</h2>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span>Based on 3 reviews</span>
+                                <a href="#">Write a review</a>
+                            </div>
+                            <div class="Reviews2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <h3>ててて</h3>
+                                <span><em>遼太郎 on Nov 18, 2021</em></span>
+                                <p>テストです。</p>
+                                <div class="link"><a href="#">Report as Inappropriate</a></div>
+                            </div>
+                            <div class="Reviews2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <h3>ててて</h3>
+                                <span><em>遼太郎 on Nov 18, 2021</em></span>
+                                <p>テストです。</p>
+                                <div class="link"><a href="#">Report as Inappropriate</a></div>
+                            </div>
+                            <div class="Reviews2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <h3>Best</h3>
+                                <span><em>Dung on Sep 03, 2021</em></span>
+                                <p>very good</p>
+                                <div class="link"><a href="#">Report as Inappropriate</a></div>
+                            </div>
                         </div>
-                    </li>
-                    <li>Size Chart
-
-                    </li>
-                    <li>shipping Policy
-
-                    </li>
-                </ul>
+                    </div>
+                    <div id="Shipping">
+                    </div>
+        
+        
+        
+                </div>
             </div>
+        
             <div id="detail1_pc">
-                <img src="../img/slider2.png" alt="book_img">
+                <a href="#"><img src="../img/slider2.png" alt="book_img"></a>
             </div>
         </div>
-       
     </div>
    
-    
+    <div class="product">
+        <div class="product_text">
+            <h2>Related products</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+        </div>
+        <div class="book1">        
+            <div class="all_part">
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="part-1">
+                       
+                         <span>Type1</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type2</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                        <span>Type3</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type4</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+    <div class="product">
+        <div class="product_text">
+            <h2>You may also like</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+        </div>
+        <div class="book1">        
+            <div class="all_part">
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="part-1">
+                       
+                         <span>Type1</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type2</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                        <span>Type3</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part_img">
+                        <div class="action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="part-1">
+                         <span>Type4</span>
+                        <h5></h5>
+                        <p></p>
+                        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
 
 
 

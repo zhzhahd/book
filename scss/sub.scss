@@ -17,13 +17,14 @@
 
 #top_menu{width: 100%; height: 95px; background: #f6f6f6;}
 #top_menu ul{height: 95px; display: flex; justify-content: center; align-items: center; font-size: 15px;}
+#top_menu ul li{padding-right: 10px;} #top_menu ul li:last-child{padding-left: 10px; text-transform:uppercase }
 #top_menu ul li a:hover{color: red; transition: all 0.5s;}
 
 
 #book_main{margin: 100px 0 95px 0;}
 #book_details{width:1200px; margin: 0 auto; display: flex;}
 #book_pc{ padding: 0 15px;}
-#pc_show{width:568px; height: 568px; border: 1px solid #ccc;}
+#pc_show{width:568px; height: 568px; border: 1px solid #eee;}
 #pc_show img{width: 100%;}
 
 #pc_slide{margin-top: 20px; padding: 0 50px 0 70px;position: relative;}
@@ -33,6 +34,7 @@
 #pc_slide p i{ color: #666; line-height: 30px; transform: translateX(110%);}
 #show{width: 450px; overflow: hidden;} #hide{width: 600px;}
 #hide div{width: 92px; margin-right: 21px; float: left;}
+#hide div img{width: 90px;}
 
 
 
@@ -40,7 +42,7 @@
 #book_title ul{display: flex;} #book_title ul li{padding-right: 10px;}
 #book_title ul li i{color: #e7a415; padding-right: 5px;}
 #book_title span{margin: 15px 0; color: #62ab00; font-size: 24px;  line-height: 54px;}
-#book_title p{font-size: 14px; margin-bottom: 20px;}
+#book_title p{font-size: 14px; margin: 10px 0 20px 0; line-height: 24px;}
 
 #book_table{font-size: 14px;}
 #book_table li{border: 1px solid #ccc; padding: 5px; border-bottom: none; line-height: 24px;}
@@ -49,9 +51,9 @@
 #book_table li span:first-child{border-right: 1px solid #ccc; padding: 5px; width: 100px; display: inline-block;}
 
 #number{margin: 40px 0 34px 0; display: flex; align-items: center;}
-#up_down{ color: gray; position: relative; display: flex; border: 1px solid #ccc; width: 80px; height: 60px;}
+#up_down{ color: gray; position: relative; display: flex; border: 1px solid #eee; width: 80px; height: 60px;}
 #up_down div{position: absolute; top: 35%; cursor: pointer;}
-#up_down input{background: none; border: none; position: relative; left: 47%; color: gray;}
+#up_down input{width: 50%; text-align: center; margin-left: -17px; background: none; border: none; position: relative; left: 47%; color: gray;}
 #up{right: 5%;} #down{left: 10%}
 #number button{padding: 23px 38px; margin: 0 25px 0 10px; background: #000; color: #fff; border: none; }
 #number i{font-size: 18px;} #number i:last-child{margin-left: 25px;}
@@ -75,18 +77,52 @@
 #choose div:nth-child(6) img{width: 120%;}
 
 #detail{padding-bottom: 95px;}
-#detail1{width: 1200px; margin: 0 auto; padding: 0 15px 0; display: flex;}
-#detail1_text{width: 800px;}
-#detail1_text ul{display: flex;}
-#detail1_text ul li{position: absolute;}
-#detail1_pc{width: 400px; padding: 0 15px;} #detail1_pc img{width: 100%;}
+#detail1{width: 1170px; margin: 0 auto; padding: 0 15px 0; display: flex;}
+#detail1_text{width: 800px; border: 1px solid #eee;}
+.detail{padding: 30px 30px 37px;}
+.detail ul:first-child{display: flex; padding: 0 0 24px;}
+.detail ul:first-child li{color: #444; font-size: 18px; line-height: 24px; padding: 0 0 11px; margin: 0 32px 0 0;}
+// .detail ul li:hover{text-decoration: underline; text-decoration: #62ab00;}
+#detail1_pc{width: 400px;} #detail1_pc img{ padding: 0 15px;width: 370px;}
+
+#tmpBox{ color: #333; font-size: 13px; margin: 0 0 8px; line-height: 26px;}
+
+#Reviews{display: none;}
+.Reviews{ border: 1px  solid #eee; padding: 24px;}
+.Reviews i{color: #e7a415; margin-bottom: 15px; font-size: 120%;}
+.Reviews a{float: right; text-decoration: underline; color: #1f2226; font-size: 11px; margin-bottom: 15px;} .Reviews a:hover{color: #62ab00; text-decoration: none; transition: all 0.5s;}
+.Reviews>div{border-bottom: 1px solid #eee;}
+
+#Reviews1{padding-bottom: 24px;}
+#Reviews1 a, #Reviews1 span{font-size: 14px;}
+#Reviews1 h2{font-size: 24px; margin: 0 0 12px 0;}
+
+.Reviews2{padding: 24px 0; }
+.Reviews2 h3{line-height: 24px; font-size: 16px; font-weight: bold;}
+.Reviews2 span{ font-size: 13px; font-weight: bold;}
+.Reviews2 p{font-size: 13px; margin: 13px 0 24px;}
+.link{border: none; padding-bottom: 39px;}
+
+#Shipping{display: none;}
+#Shipping div h2{font-size: 32px; margin-bottom: 8px;}
+#Shipping div p{ margin-bottom: 15px;}
+#Shipping div p, #Shipping div ul li{font-size: 14px; line-height: 24px; color: #333;}
+#Shipping div ul{margin: 0 0 15px 20px;}
+#Shipping div ul li{list-style-type: initial;}
+
+
+.product{width: 1200px; padding: 0 15px 70px; margin: 0 auto;}
+.product>.book1{width: 100%; height: 494px; padding-top: 20px;}
+.product>.book1 span:last-child{display: none;}
+.product>.book1>.all_part>.part{height: auto;}
+.product>.book1>.all_part>.part>.part-1{justify-content: space-evenly; height: auto;}
 
 
 
 
-
-
-
+.product_text{text-align: center; display: flex; justify-content: center; flex-wrap: wrap; padding-bottom: 60px;}
+.product_text h2{font-size: 30px; margin-bottom: 18px; width: 100%;}
+.product_text p{width: 38%; color: #555; font-size: 14px; line-height: 24px;}
 
 
 

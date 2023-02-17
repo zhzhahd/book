@@ -314,6 +314,15 @@ footer {
   font-size: 15px;
 }
 
+#top_menu ul li {
+  padding-right: 10px;
+}
+
+#top_menu ul li:last-child {
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
 #top_menu ul li a:hover {
   color: red;
   transition: all 0.5s;
@@ -336,7 +345,7 @@ footer {
 #pc_show {
   width: 568px;
   height: 568px;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
 }
 
 #pc_show img {
@@ -388,6 +397,10 @@ footer {
   float: left;
 }
 
+#hide div img {
+  width: 90px;
+}
+
 #book_buy {
   width: 540px;
   padding: 0 15px 0 45px;
@@ -415,7 +428,8 @@ footer {
 
 #book_title p {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 0;
+  line-height: 24px;
 }
 
 #book_table {
@@ -454,7 +468,7 @@ footer {
   color: gray;
   position: relative;
   display: flex;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   width: 80px;
   height: 60px;
 }
@@ -466,6 +480,9 @@ footer {
 }
 
 #up_down input {
+  width: 50%;
+  text-align: center;
+  margin-left: -17px;
   background: none;
   border: none;
   position: relative;
@@ -571,7 +588,7 @@ footer {
 }
 
 #detail1 {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
   padding: 0 15px 0;
   display: flex;
@@ -579,21 +596,182 @@ footer {
 
 #detail1_text {
   width: 800px;
+  border: 1px solid #eee;
 }
 
-#detail1_text ul {
+.detail {
+  padding: 30px 30px 37px;
+}
+
+.detail ul:first-child {
   display: flex;
+  padding: 0 0 24px;
 }
 
-#detail1_text ul li {
-  position: absolute;
+.detail ul:first-child li {
+  color: #444;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 0 11px;
+  margin: 0 32px 0 0;
 }
 
 #detail1_pc {
   width: 400px;
-  padding: 0 15px;
 }
 
 #detail1_pc img {
+  padding: 0 15px;
+  width: 370px;
+}
+
+#tmpBox {
+  color: #333;
+  font-size: 13px;
+  margin: 0 0 8px;
+  line-height: 26px;
+}
+
+#Reviews {
+  display: none;
+}
+
+.Reviews {
+  border: 1px solid #eee;
+  padding: 24px;
+}
+
+.Reviews i {
+  color: #e7a415;
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+
+.Reviews a {
+  float: right;
+  text-decoration: underline;
+  color: #1f2226;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.Reviews a:hover {
+  color: #62ab00;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.Reviews > div {
+  border-bottom: 1px solid #eee;
+}
+
+#Reviews1 {
+  padding-bottom: 24px;
+}
+
+#Reviews1 a, #Reviews1 span {
+  font-size: 14px;
+}
+
+#Reviews1 h2 {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+.Reviews2 {
+  padding: 24px 0;
+}
+
+.Reviews2 h3 {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Reviews2 span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.Reviews2 p {
+  font-size: 13px;
+  margin: 13px 0 24px;
+}
+
+.link {
+  border: none;
+  padding-bottom: 39px;
+}
+
+#Shipping {
+  display: none;
+}
+
+#Shipping div h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+#Shipping div p {
+  margin-bottom: 15px;
+}
+
+#Shipping div p, #Shipping div ul li {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+}
+
+#Shipping div ul {
+  margin: 0 0 15px 20px;
+}
+
+#Shipping div ul li {
+  list-style-type: initial;
+}
+
+.product {
+  width: 1200px;
+  padding: 0 15px 70px;
+  margin: 0 auto;
+}
+
+.product > .book1 {
   width: 100%;
+  height: 494px;
+  padding-top: 20px;
+}
+
+.product > .book1 span:last-child {
+  display: none;
+}
+
+.product > .book1 > .all_part > .part {
+  height: auto;
+}
+
+.product > .book1 > .all_part > .part > .part-1 {
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.product_text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.product_text h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.product_text p {
+  width: 38%;
+  color: #555;
+  font-size: 14px;
+  line-height: 24px;
 }
