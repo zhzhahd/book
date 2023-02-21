@@ -2,24 +2,10 @@
 
 @import "common";
 
-#sub_nav{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
-#sub_nav1{width: 950px; position: absolute; left: 0; display: flex; align-items: flex-start; left: -273px; padding: 23px 30px 46px 0; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;visibility: hidden;}
-#sub_nav2{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
-
-#sub_nav li, #sub_nav1 li ul li, #sub_nav2 li{margin-bottom: 16px;} #sub_nav li a:hover,#sub_nav1 li a:hover,#sub_nav2 li a:hover{color: #62ab00;}
-#sub_nav li a{margin-left: 16px;}
-#sub_nav1 li ul{display: flex; flex-direction: column; align-items: flex-start;}
-#sub_nav1 li ul li:first-child{margin-top: 16px;}
-
-
-
-
-
 #top_menu{width: 100%; height: 95px; background: #f6f6f6;}
 #top_menu ul{height: 95px; display: flex; justify-content: center; align-items: center; font-size: 15px;}
 #top_menu ul li{padding-right: 10px;} #top_menu ul li:last-child{padding-left: 10px; text-transform:uppercase }
 #top_menu ul li a:hover{color: red; transition: all 0.5s;}
-
 
 #book_main{margin: 100px 0 95px 0;}
 #book_details{width:1200px; margin: 0 auto; display: flex;}
@@ -61,17 +47,20 @@
 #Buy_it_now{background: #1990c6; padding: 23px 38px; border: none; color: #fff; width: 340px; margin-bottom: 20px; font-size: 14px;}
 #Buy_it_now:hover{background: #62ab00; transition: all 0.5s;}
 
-#Categories, #Share, #Pay{padding-top: 10px;}
+#Categories span, #Share span, #Pay span{font-size: 15px;}
 
 #Categories, #Categories ul{display: flex;} #Categories ul li{padding: 0 10px; font-size: 14px;}
 #Categories ul li:hover{color: #62ab00; transition: all 0.5s;}
 
-#Share ul li a i{font-size: 18px;}
-
+#Share{display: flex; padding: 15px 0 10px 0;}
+#Share ul{width: 100px; display: flex; justify-content: space-evenly; padding: 0 5px;}
+#Share ul li{width: 18%;}
+#facebook,#twitter,#pinterest{width: 100%;}
 
 #Pay span{line-height: 28px;}
 #choose{display: flex;}
 #choose div{width: 5%; height: 28px; padding: 0 9px; margin-right: 5px; border: 1px solid #ccc; border-radius: 3px; display: flex; justify-content: center; align-items: center;}
+#choose div:hover{cursor: pointer; border: 1px solid #000;}
 #choose div img{width: 75%;}
 #choose div:nth-child(2) img, #choose div:nth-child(4) img{width: 125%;}
 #choose div:nth-child(6) img{width: 120%;}

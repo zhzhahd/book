@@ -52,6 +52,19 @@ $('.part_img').mouseover(function () {
     $(this).find('.action i').css('opacity','0').css('transform', 'translateX(-40px)');
   });
 
+//gear 클릭 시 메뉴창
+$('#gear_logo').click(function(){
+  $('#gear').toggle();
+});
+
+//nav hover
+$('nav> ul >li').hover(function(){
+  $(this).children('ul').slideDown();
+
+},function(){
+  $('nav >ul >li').children('ul').slideUp();
+
+});
 
 
 });
