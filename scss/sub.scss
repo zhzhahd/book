@@ -22,8 +22,6 @@
 #hide div{width: 92px; margin-right: 21px; float: left;}
 #hide div img{width: 90px;}
 
-
-
 #book_buy{width: 540px; padding: 0 15px 0 45px;}
 #book_title ul{display: flex;} #book_title ul li{padding-right: 10px;}
 #book_title ul li i{color: #e7a415; padding-right: 5px;}
@@ -48,7 +46,6 @@
 #Buy_it_now:hover{background: #62ab00; transition: all 0.5s;}
 
 #Categories span, #Share span, #Pay span{font-size: 15px;}
-
 #Categories, #Categories ul{display: flex;} #Categories ul li{padding: 0 10px; font-size: 14px;}
 #Categories ul li:hover{color: #62ab00; transition: all 0.5s;}
 
@@ -99,15 +96,11 @@
 #Shipping div ul{margin: 0 0 15px 20px;}
 #Shipping div ul li{list-style-type: initial;}
 
-
 .product{width: 1200px; padding: 0 15px 70px; margin: 0 auto;}
 .product>.book1{width: 100%; height: 494px; padding-top: 20px;}
 .product>.book1 span:last-child{display: none;}
 .product>.book1>.all_part>.part{height: auto;}
 .product>.book1>.all_part>.part>.part-1{justify-content: space-evenly; height: auto;}
-
-
-
 
 .product_text{text-align: center; display: flex; justify-content: center; flex-wrap: wrap; padding-bottom: 60px;}
 .product_text h2{font-size: 30px; margin-bottom: 18px; width: 100%;}

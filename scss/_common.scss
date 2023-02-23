@@ -11,6 +11,7 @@ $mainC: rgb(180, 101, 48);
 @mixin bd2{border: 1px solid #eee;}
 @mixin back{background-position: center; background-size: cover;}
 @mixin bf{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0.9;}
+@mixin nav1{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
 
 
 
@@ -40,12 +41,13 @@ header nav{width:100%; height: 60px; display: flex; align-items: center; border-
 header nav> ul{@include dp; width: 40%; }
 header nav>ul>li{position: relative;}
 
-#sub_nav{position: absolute; left: 0; top:60px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
-#sub_nav1{width: 950px; position: absolute; left: 0; display: flex; align-items: flex-start; left: -273px; top: 40px; padding: 23px 26px 46px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff; }
-#sub_nav2{position: absolute; left: 0; top:60px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
+#sub_nav, #sub_nav2{@include nav1;}
+#sub_nav1{@include nav1; flex-direction:row; left: -273px; padding: 23px 26px 46px; width: 950px;}
+
 #sub_nav, #sub_nav1, #sub_nav2{z-index: 10;}
 
-#sub_nav li, #sub_nav1 li ul li, #sub_nav2 li{margin-bottom: 16px; } #sub_nav li a:hover,#sub_nav1 li a:hover,#sub_nav2 li a:hover{color: #62ab00; transition: all 0.3s;}
+#sub_nav li, #sub_nav1 li, #sub_nav2 li{margin-bottom: 16px;  } #sub_nav li a:hover,#sub_nav1 li a:hover,#sub_nav2 li a:hover{color: #62ab00; transition: all 0.3s;}
+#sub_nav li a, #sub_nav1 li a, #sub_nav2 li a{color: rgb(100, 100, 100);}
 #sub_nav1>ul{ width: 25%; } 
 #sub_nav1 ul li:first-child{border-bottom: 1px solid #ccc; padding:0 0 18px ;}
 #sub_nav1 ul li{ margin-bottom: 19px; line-height: 24px;}
