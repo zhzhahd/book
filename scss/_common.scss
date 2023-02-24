@@ -4,14 +4,14 @@ $mainC: rgb(180, 101, 48);
 
 @mixin dp{display: flex; margin: 0 auto; justify-content: space-between; align-items: center; }
 @mixin dp1{display: flex; margin: 0 auto; justify-content: space-around; align-items: center; }
-@mixin wd{width: 63%; margin: 0 auto;}
+@mixin wd{width: 1200px; margin: 0 auto;}
 @mixin hover{background: #62ab00; color: #fff; border: 2px solid #62ab00; transition: all 0.5s ease 0s;}
 @mixin bd{border: 2px solid #fff;}
 @mixin bd1{border: 2px solid #eee;}
 @mixin bd2{border: 1px solid #eee;}
 @mixin back{background-position: center; background-size: cover;}
 @mixin bf{content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0.9;}
-@mixin nav1{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; transition: all .5s ease 0s; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
+@mixin nav1{position: absolute; left: 0; top:40px; display: flex; flex-direction: column; align-items: flex-start; width: 130px; padding: 22px 30px 24px; box-shadow: 0 0 20px 0.4px #0000001a; background: #fff;}
 
 
 
@@ -37,28 +37,32 @@ header hr{color:#eee;}
 #sidemenu i:last-child:hover{color: #62ab00;}
 #sidemenu i:last-child{padding-left: 15px;} 
 
-header nav{width:100%; height: 60px; display: flex; align-items: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
-header nav> ul{@include dp; width: 40%; }
-header nav>ul>li{position: relative;}
+header nav{width:1903px; height: 60px; display: flex; align-items: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+header nav> ul{@include dp; width: 765px; }
+header nav>ul>li{position: relative; line-height: 60px;}
 
 #sub_nav, #sub_nav2{@include nav1;}
 #sub_nav1{@include nav1; flex-direction:row; left: -273px; padding: 23px 26px 46px; width: 950px;}
 
-#sub_nav, #sub_nav1, #sub_nav2{z-index: 10;}
+#sub_nav, #sub_nav1, #sub_nav2{z-index: 10; top:60px;}
 
-#sub_nav li, #sub_nav1 li, #sub_nav2 li{margin-bottom: 16px;  } #sub_nav li a:hover,#sub_nav1 li a:hover,#sub_nav2 li a:hover{color: #62ab00; transition: all 0.3s;}
+#sub_nav li, #sub_nav1 li, #sub_nav2 li{margin-bottom: 16px;     line-height: 22px; } #sub_nav li a:hover,#sub_nav1 li a:hover,#sub_nav2 li a:hover{color: #62ab00; transition: all 0.3s;}
 #sub_nav li a, #sub_nav1 li a, #sub_nav2 li a{color: rgb(100, 100, 100);}
-#sub_nav1>ul{ width: 25%; } 
+#sub_nav1>ul{ width: 25%; padding: 0 2%;} 
 #sub_nav1 ul li:first-child{border-bottom: 1px solid #ccc; padding:0 0 18px ;}
 #sub_nav1 ul li{ margin-bottom: 19px; line-height: 24px;}
 
-#sub_nav1 li a:first-child{margin-bottom: 18px;}
+#sub_nav1 li a:first-child{margin-bottom: 18px; }
 #sub_nav1 li ul{display: flex; flex-direction: column; align-items: flex-start;}
 #sub_nav1 li ul li:first-child{margin-top: 16px;}
+#sub_nav1 li:first-child a{color: black;}
 
 #gear{width: 242px; padding: 26px 30px 32px; background: #fff; box-shadow: 0 0 20px 0.4px #0000001a; position: absolute; right: 18%; top: 7.5%; z-index: 10; display: none;}
+#gear:hover{color: black;}
 #gear h4{font-size: 16px; padding: 25px 0 12px; border-bottom: 1px solid lightgray;} #gear ul{font-size: 14px; padding-top: 18px;}
 #gear ul li:not(:last-child){padding-bottom: 31px;}
+#gear ul li:hover{color: #62ab00;}
+
 
 
 //book API

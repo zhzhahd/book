@@ -102,7 +102,7 @@ header hr {
 }
 
 header nav {
-  width: 100%;
+  width: 1903px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -115,11 +115,12 @@ header nav > ul {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 765px;
 }
 
 header nav > ul > li {
   position: relative;
+  line-height: 60px;
 }
 
 #sub_nav, #sub_nav2 {
@@ -131,7 +132,6 @@ header nav > ul > li {
   align-items: flex-start;
   width: 130px;
   padding: 22px 30px 24px;
-  transition: all 0.5s ease 0s;
   box-shadow: 0 0 20px 0.4px rgba(0, 0, 0, 0.1019607843);
   background: #fff;
 }
@@ -145,7 +145,6 @@ header nav > ul > li {
   align-items: flex-start;
   width: 130px;
   padding: 22px 30px 24px;
-  transition: all 0.5s ease 0s;
   box-shadow: 0 0 20px 0.4px rgba(0, 0, 0, 0.1019607843);
   background: #fff;
   flex-direction: row;
@@ -156,10 +155,12 @@ header nav > ul > li {
 
 #sub_nav, #sub_nav1, #sub_nav2 {
   z-index: 10;
+  top: 60px;
 }
 
 #sub_nav li, #sub_nav1 li, #sub_nav2 li {
   margin-bottom: 16px;
+  line-height: 22px;
 }
 
 #sub_nav li a:hover, #sub_nav1 li a:hover, #sub_nav2 li a:hover {
@@ -173,6 +174,7 @@ header nav > ul > li {
 
 #sub_nav1 > ul {
   width: 25%;
+  padding: 0 2%;
 }
 
 #sub_nav1 ul li:first-child {
@@ -199,6 +201,10 @@ header nav > ul > li {
   margin-top: 16px;
 }
 
+#sub_nav1 li:first-child a {
+  color: black;
+}
+
 #gear {
   width: 242px;
   padding: 26px 30px 32px;
@@ -209,6 +215,10 @@ header nav > ul > li {
   top: 7.5%;
   z-index: 10;
   display: none;
+}
+
+#gear:hover {
+  color: black;
 }
 
 #gear h4 {
@@ -226,9 +236,13 @@ header nav > ul > li {
   padding-bottom: 31px;
 }
 
+#gear ul li:hover {
+  color: #62ab00;
+}
+
 .book1 {
   height: 583px;
-  width: 63%;
+  width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -355,7 +369,7 @@ footer {
 }
 
 .footerall {
-  width: 63%;
+  width: 1200px;
   margin: 0 auto;
   height: 253px;
   padding: 20px;
@@ -433,7 +447,7 @@ footer {
 }
 
 #footer_card {
-  width: 63%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -477,6 +491,8 @@ footer {
 }
 
 #top_menu ul {
+  width: 300px;
+  margin: 0 auto;
   height: 95px;
   display: flex;
   justify-content: center;
@@ -805,6 +821,13 @@ footer {
   line-height: 24px;
   padding: 0 0 11px;
   margin: 0 32px 0 0;
+}
+
+.detail ul:first-child li:hover {
+  cursor: pointer;
+  -webkit-text-decoration: underline #62ab00;
+          text-decoration: underline #62ab00;
+  transition: all 0.5s;
 }
 
 #detail1_pc {

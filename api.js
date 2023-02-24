@@ -55,14 +55,16 @@ $('.part_img').mouseover(function () {
 //gear 클릭 시 메뉴창
 $('#gear_logo').click(function(){
   $('#gear').toggle();
+  $('#gear').css('color','black');
 });
+
 
 //nav hover
 $('nav> ul >li').hover(function(){
-  $(this).children('ul').slideDown();
+  $(this).children('ul').stop().slideDown();
 
 },function(){
-  $('nav >ul >li').children('ul').slideUp();
+  $('nav >ul >li').children('ul').stop().slideUp();
 
 });
 

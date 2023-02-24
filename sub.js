@@ -2,13 +2,15 @@ $(document).ready(function(){
 
 //text 파일 삽입
 $.get("./sub_txt/txt1.txt", function (data) {
-$("#tmpBox").html(data);    
-$("#Shipping").html(data);
+$("#tmpBox").html(data); 
 
 var str = data.substring(0, 200);
 $("#book_buy p").html(str+'...');
 })
 
+$.get("./sub_txt/txt2.txt", function (data) {  
+$("#Shipping").html(data);
+})
 
 //book slide 
 $('#hide div').click(function(){
