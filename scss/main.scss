@@ -2,7 +2,7 @@
 
 @import "common";
 
-#slidewrap{width:100%; height:600px; background: rgb(246, 252, 253);position: relative;}
+#slidewrap{width:100%; height:600px; background: rgb(246, 252, 253);position: relative; overflow: hidden;}
 .slide li{@include wd; }
 
 #slider1,#slider2{ height: 600px; @include dp; }
